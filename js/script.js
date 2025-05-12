@@ -1,38 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const header = document.querySelector("header");
+$(document).ready(function() {
 
-    // Ocultar el header en pantallas pequeñas al cargar la página
-    if (window.innerWidth <= 768) {
-        header.style.transform = "translateY(-100%)";
-        header.style.opacity = "0";
-    }
-
-    // Mostrar el header cuando el mouse entra en la parte superior
-    document.addEventListener("mousemove", function (event) {
-        if (event.clientY < 50) {
-            header.style.transform = "translateY(0)";
-            header.style.opacity = "1";
-        }
+    $('.fa-bars').click(function(){
+        $(this).toggleClass('fa-times');
+        $('.navbar').toggleClass('nav-toggle');
     });
 
-    // Ocultar el header cuando el mouse sale de la parte superior
-    document.addEventListener("mouseleave", function () {
-        if (window.innerWidth <= 768) {
-            header.style.transform = "translateY(-100%)";
-            header.style.opacity = "0";
-        }
-    });
+    $(window).on('load scroll',function(){
+        $('.fa-bars').removeClass('fa-times');
+        $('.navbar').removeClass('nav-toggle');
 
-    // Asegurar que el header se esconda al redimensionar la pantalla
-    window.addEventListener("resize", function () {
-        if (window.innerWidth <= 768) {
-            header.style.transform = "translateY(-100%)";
-            header.style.opacity = "0";
-        } else {
-            header.style.transform = "translateY(0)";
-            header.style.opacity = "1";
+        if($(window).scrollTop()>30){
+            $('.header').css({'background':'#771414','box-shadow':'0 .2rem .5rem rgba(0,0,0,.1)'});
+        }else{
+            $('.header').css({'background':'none','box-shadow':'none'});
         }
-    });
+    }); 
+
+    
+
+
 });
 
 

@@ -4,151 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio web</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="js/script.js"></script>
 
+    <!-- links -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- fin links -->
+
+    <title>Portfolio web</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
+    <!-- header sectio  -->
+    <header class="header">
+        <a href="#" class="logo"><i class="fas fa-code"></i>Web developer</a>
+        <div class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <li><a href="#certificaciones">Certificaciones</a></li>
+                <li><a href="#projectos">Projectos</a></li>
+                <li><a href="#contacto">Contactame</a></li>
+            </ul>
 
-            </div">
-
-            <div class="navbar-container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent custom-navbar">
-                    <div class=" container-fluid justify-content-center">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Sobre Mi</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Proyectos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">certificados</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contactame</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
-            </div>
-
-
-
-
+        </nav>
 
     </header>
+    <!-- fin del Header  -->
 
-    <main>
-        <!--Parte Izquierda de la pantalla-->
-        <div class="left-section">
-            <div class="foto">
-                <img class="perfil" src="assets/Img_Perfil.jpeg" alt="">
+    <!-- home section  -->
+    <section id="home" class="home">
+        <h1 class="banner">Web developer & Cibersecurity</h1>
+        <h3 class="intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum minima accusantium
+            corrupti voluptatibus explicabo perferendis, eveniet quas, omnis inventore assumenda necessitatibus
+            temporibus amet ea pariatur quos maxime. Ratione, iure?</h3>
+        <a href="sobre mi"><button>Sobre Mi</button></a>
+
+
+
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+
+        <div class="fas fa-gear cod1"></div>
+        <div class="fas fa-file-code cod2"></div>
+
+    </section>
+    <!-- fin del home section  -->
+
+
+    <!-- sobre mi section  -->
+    <section class="sobremi" id="sobremi">
+        <h1 class="heading">Sobre Mi</h1>
+
+        <div class="row">
+            <div class="contenido">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, asperiores.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae distinctio ea porro quidem. Nisi
+                    culpa
+                    veritatis ipsa delectus, ad velit illo quidem dolore consectetur. Provident.</p>
+                <a href="#"><button class="btn">Proyectos</button></a>
             </div>
-            <h2 class="sobreMi">Sebastian Blanco</h2>
-            <h1>Estudiante de Informatica Empresarial</h1>
-            <div class="shape"></div>
-            <p>Advanced student pursuing a Bachelor's degree in Business Informatics at the University of Costa Rica,
-                with knowledge in cybersecurity, networks, software development, and IT. Passionate about
-                problem-solving and continuous learning. Seeking an internship to apply my skills in Cybersecurity and
-                Software Development</p>
-            <button class="Git">GitHub</button>
-            <div class="redesSociales">
-                <ion-icon class="icono" name="logo-facebook"></ion-icon>
-                <ion-icon class="icono" name="logo-linkedin"></ion-icon>
-                <ion-icon class="icono" name="logo-instagram"></ion-icon>
 
+            <div class="imagen">
+                <img src="assets/Programming-amico.png" alt="">
             </div>
+        </div>
+    </section>
 
-
-            <div class="tecnologias">
-                <h2>Tecnologias</h2>
-            </div>
-            <div class="carrusel-tec">
-
-                <div class="carrusel">
-                    <img src="assets/css-3-svgrepo-com.png" alt="">
-                    <img src="assets/docker-svgrepo-com.png" alt="">
-                    <img src="assets/javascript-svgrepo-com.png" alt="">
-                    <img src="assets/html-5-svgrepo-com.png" alt="">
-                    <img src="assets/sql-database-generic-svgrepo-com.png" alt="">
-                    <img src="assets/java-svgrepo-com.png" alt="">
-                    <img src="assets/VirtualBox_23525.png" alt="">
-                    <img src="assets/kalilinux-svgrepo-com.png" alt="">
-                    <img src="assets/dotnet-svgrepo-com.png" alt="">
-
-                    <img src="assets/css-3-svgrepo-com.png" alt="">
-                    <img src="assets/docker-svgrepo-com.png" alt="">
-                    <img src="assets/javascript-svgrepo-com.png" alt="">
-                    <img src="assets/html-5-svgrepo-com.png" alt="">
-                    <img src="assets/sql-database-generic-svgrepo-com.png" alt="">
-                    <img src="assets/java-svgrepo-com.png" alt="">
-                    <img src="assets/VirtualBox_23525.png" alt="">
-                    <img src="assets/kalilinux-svgrepo-com.png" alt="">
-                    <img src="assets/dotnet-svgrepo-com.png" alt="">
-
-                    <img src="assets/css-3-svgrepo-com.png" alt="">
-                    <img src="assets/docker-svgrepo-com.png" alt="">
-                    <img src="assets/javascript-svgrepo-com.png" alt="">
-                    <img src="assets/html-5-svgrepo-com.png" alt="">
-                    <img src="assets/sql-database-generic-svgrepo-com.png" alt="">
-                    <img src="assets/java-svgrepo-com.png" alt="">
-                    <img src="assets/VirtualBox_23525.png" alt="">
-                    <img src="assets/kalilinux-svgrepo-com.png" alt="">
-                    <img src="assets/dotnet-svgrepo-com.png" alt="">
-
-                    <img src="assets/css-3-svgrepo-com.png" alt="">
-                    <img src="assets/docker-svgrepo-com.png" alt="">
-                    <img src="assets/javascript-svgrepo-com.png" alt="">
-                    <img src="assets/html-5-svgrepo-com.png" alt="">
-                    <img src="assets/sql-database-generic-svgrepo-com.png" alt="">
-                    <img src="assets/java-svgrepo-com.png" alt="">
-                    <img src="assets/VirtualBox_23525.png" alt="">
-                    <img src="assets/kalilinux-svgrepo-com.png" alt="">
-                    <img src="assets/dotnet-svgrepo-com.png" alt="">
+    <!-- fin del sobre mi  -->
 
 
 
+    <!-- certificaciones section  -->
+
+    <section id="certificaciones" class="certificaciones">
+        <h1 class="heading">Certificaciones</h1>
+
+        <div class="row">
+
+            <div class="card">
+                <div class="imagen">
+                    <img src="assets/CF.jpg" alt="">
                 </div>
+                <div class="info">
+                    <h3>Fundamentos de Cibersegurida</h3>
+                    <span>Google</span>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="imagen">
+                    <img src="assets/MGS.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Cibersecurity Risck</h3>
+                    <span>Google</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imagen">
+                    <img src="assets/Kickoff-Badge.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Kickoff</h3>
+                    <span>Project Management Institut</span>
+                </div>
             </div>
 
         </div>
 
-        <!--Parte derecha de la pantalla-->
-        <div class="right-section">
-
-        </div>
+    </section>
 
 
+    <!-- fin del certificaciones  -->
 
-    </main>
 
+
+
+
+
+    <!-- jquery links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js links  -->
+    <script src="js/script.js"></script>
+    <!-- fin js links -->
 </body>
-<!-- Ionicons -->
-<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
 
 </html>
